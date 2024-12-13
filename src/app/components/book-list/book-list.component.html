@@ -1,0 +1,20 @@
+<div class="book-list">
+    <h1>Book List</h1>
+    <button routerLink="/add" class="add-book-btn">Add New Book</button>
+  
+    <ul class="book-items">
+      <li *ngFor="let book of books" class="book-item">
+        <div class="book-info">
+          <h3>{{ book.title }}</h3>
+          <p>Author: {{ book.author }}</p>
+          <p>ISBN: {{ book.isbn }}</p>
+          <p> Publication Year:{{book.publicationYear}}</p>
+        </div>
+        <div class="book-actions">
+          <button (click)="viewBook(book.isbn)" class="view-btn">View</button>
+          <button (click)="editBook(book.isbn)" class="edit-btn">Edit</button>
+          <button (click)="deleteBook(book.isbn)" class="delete-btn">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>

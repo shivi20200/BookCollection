@@ -1,0 +1,29 @@
+
+
+.book-details {
+    padding: 20px;
+    border: 1px solid black; 
+    max-width: 800px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 20px auto; 
+    margin-top: 80px; /
+  }
+  
+  /* Centered book list */
+  .book-list {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+  }
+  
+
+  .book-details h1 {
+    margin-bottom: 10px;
+  }
+  
+
+  .book-details p {
+    margin: 5px 0;
+  }
+  

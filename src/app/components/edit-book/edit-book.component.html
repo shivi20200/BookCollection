@@ -1,0 +1,19 @@
+
+<div class="edit-book-form">
+    <h2>Edit Book</h2>
+    <form [formGroup]="editBookForm" (ngSubmit)="onSubmit()">
+      <label>
+        Title:
+        <input formControlName="title" type="text" />
+      </label>
+      <label>
+        Author:
+        <input formControlName="author" type="text" />
+      </label>
+      <label>
+        Publication Year:
+        <textarea formControlName="publicationYear"></textarea>
+      </label>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
